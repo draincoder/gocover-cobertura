@@ -199,7 +199,7 @@ func TestConvertSetMode(t *testing.T) {
 	if l = m.Lines[0]; l.Number != 4 || l.Hits != 1 {
 		t.Errorf("unmatched line: Number:%d, Hits:%d", l.Number, l.Hits)
 	}
-	if l = m.Lines[1]; l.Number != 5 || l.Hits != 0 {
+	if l = m.Lines[1]; l.Number != 5 || l.Hits != 1 {
 		t.Errorf("unmatched line: Number:%d, Hits:%d", l.Number, l.Hits)
 	}
 	if l = m.Lines[2]; l.Number != 6 || l.Hits != 0 {
@@ -212,7 +212,7 @@ func TestConvertSetMode(t *testing.T) {
 	if l = c.Lines[0]; l.Number != 4 || l.Hits != 1 {
 		t.Errorf("unmatched line: Number:%d, Hits:%d", l.Number, l.Hits)
 	}
-	if l = c.Lines[1]; l.Number != 5 || l.Hits != 0 {
+	if l = c.Lines[1]; l.Number != 5 || l.Hits != 1 {
 		t.Errorf("unmatched line: Number:%d, Hits:%d", l.Number, l.Hits)
 	}
 	if l = c.Lines[2]; l.Number != 6 || l.Hits != 0 {
